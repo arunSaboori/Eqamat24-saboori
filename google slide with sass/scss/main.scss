@@ -1,0 +1,234 @@
+$hidden:hidden;
+$list-text-none:none;
+$list-none:none;
+$arial-font:arial, sans-serif;
+$color-white:#ffffff;
+$color-black:rgba(0, 0, 0, 0.87);
+$border-color:rgb(184, 190, 190);
+$btn-border-color:#f8f9fa;
+$background-color:#f4f4f4;
+$btn-color:#3c4043;
+$list-color: #70757a;
+
+$px520:520px;
+$px300:300px;
+$px100:100px;
+$px50:50px;
+$px35:35px;
+$px20:20px;
+$px15:15px;
+$px8:8px;
+$px0:0px;
+
+$d-flex:flex;
+$flex-fd-column:column;
+$flex-fd-row:row;
+$justify-content-end:end;
+$justify-content-center:center;
+$justify-content-spacebetween:space-between;
+$align-items-center:center;
+$flex-wrap-wrap:wrap;
+$p-absolute:absolute;
+$p-relative:relative;
+$rem1:1rem;
+$percent-35:35%;
+$percent-3:3%;
+
+
+* {
+    list-style: $list-text-none;
+    text-decoration: $list-text-none;
+    font-family:$arial-font;
+    padding: $px0;
+    margin: $px0;
+    overflow: $hidden;
+  }
+  .hr {
+    color:$color-white;
+  }
+  .firstpage-text .menu {
+    height: $px20;
+    width: $px20;
+  }
+  .firstpage-text .account-picture {
+    height: $px20;
+    width: $px20;
+  }
+  .firstpage-text {
+    display: $d-flex;
+    justify-content: $justify-content-end;
+  }
+  .firstpage-text li {
+    padding: $px8 $rem1;
+  }
+  .firstpage-text li a {
+    color: $color-black;
+  }
+  
+  /* ////////// */
+  
+  .google-logo {
+    width:$px300;
+    height: $px100;
+  }
+  .search-icon {
+    width: $px20;
+    height: $px20;
+    position: $p-absolute;
+    top: $percent-35;
+    left: $percent-3;
+  }
+  .voice-icon {
+    width: $px15;
+    height: $px20;
+  }
+  
+  .div-search-box {
+    position: $p-relative
+  }
+  
+  .div-ul-3 {
+    display: $d-flex;
+    flex-direction: $flex-fd-column;
+    justify-content: $justify-content-center;
+    align-items: $align-items-center;
+  }
+  
+  .input-1 {
+    border-radius: $px35;
+    height: $px50;
+    width:$px520;
+    max-width: 90%;
+    border-color: $border-color;
+    border-width: 0.5px;
+    padding: 0 50px;
+    font-size: 18px;
+  }
+  .container ul {
+    height: 30vh;
+  }
+  .ul-1 {
+    display: $d-flex;
+    flex-direction: $flex-fd-column;
+    justify-content: $justify-content-center;
+    align-items: $align-items-center;
+  }
+  .ul-2 {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .ul-2 li {
+    margin: 0px 20px;
+  }
+  .btn-1 {
+    background-color: $btn-border-color;
+    border: 1px solid $btn-border-color;
+    border-radius: 4px;
+    color:$btn-color;
+    font-family: $arial-font;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: $align-items-center;
+    cursor: pointer;
+    user-select: $list-text-none;
+  }
+  .btn-2 {
+    background-color: $btn-border-color;
+    border: 1px solid $btn-border-color;
+    border-radius: 4px;
+    color: $btn-color;
+    font-family: $arial-font;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: $align-items-center;
+    cursor: pointer;
+    user-select: $list-text-none;
+  }
+  
+  .ul-3 {
+    display: $d-flex;
+    flex-direction: $flex-fd-row;
+    justify-content: $justify-content-center;
+    position: $p-relative;
+  }
+  .ul-3 li a {
+    margin: 0px 0.8rem;
+  }
+  
+  footer {
+    position: $p-absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $background-color;
+  }
+  
+  .end-ul {
+    display: $d-flex;
+    flex-direction: $flex-fd-row;
+    justify-content: $justify-content-spacebetween;
+  }
+  .li1 {
+    display: $d-flex;
+    flex-direction: $flex-fd-row;
+    padding: 1.5rem 0rem 1rem 1rem;
+  }
+  .li1 a {
+    color: $list-color;
+    padding: 1rem;
+  }
+  .li2 {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 0rem 1rem 1rem;
+  }
+  .li2 a {
+    color: $list-color;
+    padding: 1rem;
+  }
+  .footer-p {
+    padding: 1.2rem 2rem;
+    color: $list-color;
+  }
+  
+  @media (max-width: 520px) {
+    .input-1 {
+      width: 300px !important;
+      max-width: 20%;
+    }
+    .search-icon {
+      display: $list-text-none;
+    }
+  
+    .end-ul {
+      flex-wrap: $flex-wrap-wrap;
+    }
+  }
+  @media (max-width: 640px) {
+    .input-1 {
+      width: 420px;
+    }
+  
+    .end-ul {
+      flex-wrap: $flex-wrap-wrap;
+    }
+  }
+  @media (max-width: 720px) {
+    .input-1 {
+      width: 420px;
+      max-width: 80%;
+    }
+    .end-ul {
+      flex-wrap: $flex-wrap-wrap;
+    }
+  }
+  

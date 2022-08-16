@@ -1,0 +1,106 @@
+@font-face {
+ font-family: 'vazir';
+ src: url(/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.woff);
+
+}
+
+
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+font-family: 'vazir';
+}
+body{
+background-color:blue;
+min-height: 100vh;
+
+}
+h2{
+    text-align: center;
+    color: rgba(255, 0, 0, 0.943);
+    font-size: 3rem;
+    font-weight:900;
+    margin: 6.3rem 0px;
+}
+  .d-pick {
+	position: relative;
+	width: 100%;
+	max-width: 320px;
+	height: 60px;
+	background-color: rgb(227, 29, 29);
+	margin: 30px auto;
+    cursor:grab;
+	user-select: none;
+    transform: translateY(-100px);
+	color: blue;
+}
+
+.d-pick:hover {
+	background-color: #ff5959;
+}
+
+.d-pick .selected-date {
+	width: 100%;
+	height: 100%;
+	display: flex;
+ 	justify-content: center;
+	align-items: center;
+	color: #313131;
+	font-size: 28px;
+}
+
+.d-pick .dates {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background-color: rgb(130, 134, 238);
+}
+
+.d-pick .dates.active {
+	display: block;
+}
+
+.d-pick .dates .month {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 10px solid  rgb(130, 134, 238);
+}
+
+.d-pick .dates .month .arrows {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+	font-size: 40px;
+	font-weight: 900;
+}
+
+.d-pick .dates .month .arrows:hover {
+	background-color: #fe0303;
+}
+
+.d-pick .dates .month .arrows:active {
+	background-color: #e9290f;
+}
+
+.d-pick .dates .days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	height: 200px;
+ }
+.d-pick .dates .days .day { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #313131;
+}
+.d-pick .dates .days .day.selected {
+	background-color: #ff4d17;
+}
+

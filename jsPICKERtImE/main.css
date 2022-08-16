@@ -1,0 +1,74 @@
+
+@font-face {
+  font-family: 'vazir';
+  src: url(/vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.woff2);
+ 
+ }
+ 
+
+
+
+* {
+   padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 200vh;
+  background: rgb(215, 117, 117);
+ }
+.date-picker {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-picker select {
+  direction: rtl;
+  font-family: 'vazir';
+  margin: 30px;
+  border-radius: 10px;
+  width: 300px;
+  height: 40px;
+}
+.date-picker select:hover {
+  border-color: aquamarine;
+}
+.input{
+  border-style: none;
+  font-size: 20px;
+  margin: 5rem;
+  padding :1rem 2.5rem;
+  width: 200px;
+  height: 60px;
+  color: red;
+  background-color: rgb(243, 243, 253);
+  border-radius: 10px;
+}
+.input:hover{
+  border-style: none;
+  font-size: 20px;
+  width: 200px;
+  height: 60px;
+  color: red;
+  background-color: rgb(37, 37, 98);
+  border-radius: 10px;
+}
+.input:active{
+   color: red;
+  background-color: rgb(171, 171, 255);
+  border-radius: 10px;
+}
+.date-picker input{
+  direction: rtl;
+  width: 100px;
+  height: 80px;
+  background-color: blue;
+  font-size: 20px;
+  border-radius: 10px;
+}
