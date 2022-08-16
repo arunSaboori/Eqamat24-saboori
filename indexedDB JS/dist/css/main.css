@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box; }
+
+.get-time {
+  height: 48vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 5px solid white;
+  border-radius: 10px;
+  background: linear-gradient(to right, #ffffff, #fd1d1d, #fcb045);
+  background-size: 400% 400%;
+  animation: bgg    10s infinite ease-in-out; }
+
+.e {
+  font-size: 30px;
+  font-weight: 900; }
+
+.div-2 {
+  height: 48vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 5px solid white;
+  border-radius: 10px;
+  background: #c995fd;
+  background: linear-gradient(to right, #4f0084, #ff0000, #00ff15);
+  background-size: 400% 400%;
+  animation: bgg    10s infinite ease-in-out; }
+
+.get-time input {
+  margin: 1rem;
+  width: 400px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: none; }
+  .get-time input:hover {
+    background-color: #7f7fe3; }
+
+.get-time button {
+  background-color: #e1e1f5;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem;
+  width: 200px;
+  height: 30px; }
+  .get-time button:hover {
+    background-color: #d2d2da; }
+  .get-time button:active {
+    background-color: gainsboro; }
+
+@keyframes bgg {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
+
+.table thead {
+  font-size: 20px; }
+
+.table tbody {
+  font-size: 25px;
+  background-color: white;
+  border-radius: 5px;
+  overflow-y: scroll; }

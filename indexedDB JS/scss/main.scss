@@ -1,0 +1,101 @@
+$d-flex:flex;
+$bgc:white;
+*{
+      box-sizing: border-box;
+}
+ .get-time {
+     height: 48vh;
+    display: $d-flex; 
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background: linear-gradient(to right ,#ffffff,
+    #fd1d1d, #fcb045
+);
+background-size: 400% 400%;
+ animation: bgg    10s infinite ease-in-out;
+
+ 
+   }
+   .e{
+    font-size: 30px;
+    font-weight: 900;
+   }
+.div-2 {
+     height: 48vh;
+    display: $d-flex; 
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background:rgb(201, 149, 253);
+    background: linear-gradient(to right ,#4f0084,
+    #ff0000, #00ff15
+);
+background-size: 400% 400%;
+ animation: bgg    10s infinite ease-in-out;
+
+
+   }
+.get-time  input{
+      margin: 1rem;
+      width: 400px;
+      height: 60px;
+      font-size: 20px;
+      border-radius: 15px;
+      border: none;
+      &:hover{
+            background-color: rgb(127, 127, 227);
+      }
+
+
+ }
+.get-time  button{
+      background-color: rgb(225, 225, 245);
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 1rem;
+      width: 200px;
+      height: 30px;
+      &:hover{
+            background-color: rgb(210, 210, 218);
+      }
+      &:active{
+            background-color: rgb(220, 220, 220);
+      }
+ }
+ 
+   
+  
+   @keyframes bgg {
+      0%{
+          background-position: 0 50%;
+      }
+      50%{
+          background-position: 100% 50%;
+      }
+      100%{
+          background-position: 0 50%;
+      }
+  }
+  .table{
+
+
+
+      thead{
+          font-size: 20px;
+      }
+      tbody{
+        font-size: 25px;
+        background-color: $bgc;
+        border-radius: 5px;
+        overflow-y: scroll;
+       }
+   
+      }
+
+ 
