@@ -14,16 +14,25 @@ createApp({
             newItemto: '',
             tits: [],
             dats:[],
-        }
+            timess:this.dataTime
+         }
     },
     methods: {
           add(){
+              this.addTime()
             this.tits.push(this.newItemone);
             this.newItemone='';
             this.dats.push(this.newItemto);
             this.newItemto='';
-        
-          }
+            
+             },
+        addTime(){
+             const current = new Date();
+            const date = current.getFullYear()+'-'+(current.getMonth()+1)+'-'+current.getDate();
+            const time = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
+            const dateTime = date +' '+ time; 
+             return dateTime
+               }
     }
 
 
