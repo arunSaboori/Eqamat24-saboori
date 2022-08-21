@@ -5,9 +5,8 @@
   "name": "index-vue",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive "
+    "sass": "node-sass -w index.scss  index.css --recursive "
   },
   "author": "",
   "license": "ISC",

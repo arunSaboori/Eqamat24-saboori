@@ -70,6 +70,10 @@ body {
   user-select: none;
 }
 
+.check{
+  width: 50px;
+  height: 40px;
+}
 /* table */
 
 /* footer */

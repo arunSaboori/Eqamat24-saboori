@@ -28,9 +28,9 @@
             <div class=".style2 w-50">
               <h2 class="m-4">CREATE TASK</h2>
               <label for="title">{{ title }}</label>
-              <input type="text" id="title" class="form-control m-3" v-model="newItemone"  placeholder="add title"/>
+              <input type="text" id="title" class="form-control m-3" v-model="newItemone" required placeholder="add title"/>
               <label for="time">{{date}}</label>
-              <input type="date" id="time" class="form-control m-3" v-model="newItemto" placeholder="add date"/>
+              <input type="date" id="time" class="form-control m-3" v-model="newItemto" required placeholder="add date"/>
                <p v-model="newItemtree"></p>
               <button class="btn btn-warning w-25 m-3" @click="add">submit</button>
               </div>
@@ -54,7 +54,7 @@
                <td>  <li v-for="tit in tits">{{ tit }} </li></td>
                <td>  <li v-for="dat in dats">{{ dat }}  </li></td>
                <td>  <li v-for="Current in Currents"> {{ Current }}</li></td>
-                <td><input type="checkbox"  ></td>
+                <td><input type="checkbox"  class="check"></td>
              </tr>
         </table>
              </div>
