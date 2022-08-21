@@ -14,26 +14,27 @@ createApp({
             newItemto: '',
             tits: [],
             dats:[],
-            timess:this.dataTime
-         }
+            Currents:[],
+      
+            }
     },
     methods: {
+
           add(){
-              this.addTime()
+            const current = new Date();
+            const date = current.getFullYear()+'-'+(current.getMonth()+1)+'-'+current.getDate();
+            const time = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
+            const dateTime = date +' '+ time;
+
             this.tits.push(this.newItemone);
             this.newItemone='';
             this.dats.push(this.newItemto);
             this.newItemto='';
-            
+            this.Currents.push(dateTime);
+             
+             
              },
-        addTime(){
-             const current = new Date();
-            const date = current.getFullYear()+'-'+(current.getMonth()+1)+'-'+current.getDate();
-            const time = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
-            const dateTime = date +' '+ time; 
-             return dateTime
-               }
-    }
+      }
 
 
 }).mount('#app')
