@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w index.scss  index.css --recursive "
+    "sass": "node-sass -w index.scss  css/main.css --recursive "
   },
   "author": "",
   "license": "ISC",

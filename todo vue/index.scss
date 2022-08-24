@@ -1,0 +1,106 @@
+$color-red: rgb(232, 0, 0);
+$color-yellow:yellow;
+$color-green:rgb(98, 255, 0);
+
+body {
+  background: $color-red;
+  height: 70vh;
+}
+/* header */
+.header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+
+  .text {
+    color: $color-yellow;
+    font-size: 30px;
+    user-select: none;
+    &:hover {
+      color: $color-red;
+      font-size: 30px;
+      transition: 0.2s;
+      cursor: alias;
+      &:active {
+        color: $color-green;
+        font-size: 27px;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+.btn:hover {
+  color: $color-red;
+  transition: 0.2s;
+}
+.btn:active {
+  color: $color-green;
+}
+/* header */
+
+/* create form */
+.style {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+  color: $color-yellow;
+}
+
+/* create form */
+
+/* table */
+
+.div-mother {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  table {
+    justify-content: space-around;
+    width: 800px;
+    font-size: 30px;
+    list-style: none;
+    background: rgb(255, 170, 0);
+    padding: 1rem;
+    text-align: center;
+    user-select: none;
+  }
+  .check {
+    width: 50px;
+    height: 40px;
+  }
+}
+
+/* table */
+
+/* footer */
+#footer {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  bottom: -100%;
+  background: black;
+  color: $color-yellow;
+  font-size: 20px;
+  p {
+    &:hover {
+      color: $color-red;
+      text-decoration: underline;
+      user-select: none;
+    }
+  }
+}
+
+/* footer */
