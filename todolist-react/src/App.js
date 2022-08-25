@@ -18,11 +18,14 @@ function App() {
     </div>
   );
 }
+const current = new Date();
+const date = current.getFullYear() + '-' + (current.getMonth() + 1) + '-' + current.getDate();
+const time = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
+const dateTime = date + ' ' + time;
 
 const GetTask =localStorage.getItem('task');
 const GetDate  =localStorage.getItem('date');
-
-const HeaderFooterTable = () => {
+ const HeaderFooterTable = () => {
  
    
   return (
@@ -56,6 +59,7 @@ const HeaderFooterTable = () => {
             <tr>
               <td>{GetTask}</td>
               <td>{GetDate}</td>
+              <td>{dateTime}</td>
              </tr>
               </tbody>
          </table>

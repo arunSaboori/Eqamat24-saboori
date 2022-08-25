@@ -67,7 +67,7 @@ body {
 }
 .div-mother table {
   justify-content: space-around;
-  width: 400px;
+  width: 800px;
   font-size: 20px;
   list-style: none;
   background: rgb(255, 1, 1);
@@ -76,6 +76,7 @@ body {
   user-select: none;
   border-radius: 20px;
   border: none;
+  cursor: pointer;
 }
 .div-mother table:hover {
   box-shadow: 0px 0px 15px 15px rgb(0, 0, 0);
