@@ -1,0 +1,117 @@
+$color-red: rgb(230, 230, 230);
+$color-yellow:rgb(255, 0, 0);
+$color-green:rgb(255, 255, 255);
+
+body {
+  background: $color-red;
+  min-height: 100vh;
+    }
+/* header */
+.header {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+ 
+  .text {
+    color: $color-yellow;
+    font-size: 30px;
+    user-select: none;
+    &:hover {
+      color: $color-red;
+      font-size: 30px;
+      transition: 0.2s;
+      cursor: alias;
+      &:active {
+        color: $color-green;
+        font-size: 27px;
+        transition: 0.2s;
+      }
+    }
+  }
+}
+.btn:hover {
+  color: $color-red;
+  transition: 0.2s;
+}
+.btn:active {
+  color: $color-green;
+}
+/* header */
+
+/* create form */
+.style {
+  width: 100vw;
+  height: 100vh;
+   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+  color: $color-yellow;
+}
+
+/* create form */
+
+/* table */
+
+.div-mother {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  input{
+    border: none;
+    border-radius: 20px;
+    margin: 1rem 0px;
+    font-size: 15px;
+  }
+  table {
+     justify-content: space-around;
+    width: 400px;
+    font-size: 20px;
+    list-style: none;
+    background: rgb(255, 1, 1);
+    padding: 1rem;
+    text-align: center;
+    user-select: none;
+    border-radius: 20px;
+    border: none;
+    &:hover{
+      box-shadow: 0px 0px 15px 15px rgb(0, 0, 0);
+      color: white;
+      transition: .6s;
+    }
+  }
+  .check {
+    width: 50px;
+    height: 40px;
+  }
+}
+
+/* table */
+
+/* footer */
+#footer {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: auto;
+  background: black;
+  color: $color-yellow;
+  font-size: 20px;
+  p {
+    &:hover {
+      color: $color-red;
+      text-decoration: underline;
+      user-select: none;
+    }
+  }
+}
+
+/* footer */
