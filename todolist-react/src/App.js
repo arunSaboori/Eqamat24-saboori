@@ -23,9 +23,9 @@ const date = current.getFullYear() + '-' + (current.getMonth() + 1) + '-' + curr
 const time = current.getHours() + ":" + current.getMinutes() + ":" + current.getSeconds();
 const dateTime = date + ' ' + time;
 
-const GetTask =localStorage.getItem('task');
+const GetTask = localStorage.getItem('task');
 const GetDate  =localStorage.getItem('date');
- const HeaderFooterTable = () => {
+  const HeaderFooterTable = () => {
  
    
   return (
@@ -57,6 +57,8 @@ const GetDate  =localStorage.getItem('date');
           </thead>
           <tbody> 
             <tr>
+ 
+
               <td>{GetTask}</td>
               <td>{GetDate}</td>
               <td>{dateTime}</td>
