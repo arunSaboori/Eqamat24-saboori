@@ -1,0 +1,60 @@
+    aside{ 
+        display: flex;
+        width: 100vw;
+        height:50vh;
+        justify-content: center;
+        flex-direction: column;
+    
+    
+     }
+    table th{
+    padding:1rem;
+   }
+   table{
+    background-color:yellow;
+ 
+    }
+    
+    `
+
+     
+     
+    static properties = {
+        GetItems: {
+            type: Array,
+        },
+    };
+
+
+    constructor() {
+        super();
+        this.GetItems = JSON.parse(localstorage.GetItem('form-data'));
+
+
+    }
+
+     
+
+
+
+    const tasks = this.GetItems;
+
+
+    ${tasks.map((data => html`
+        <tr>
+          <td>${data.title}</td>
+          <td>${data.date}</td>
+          <td></td>
+        </tr>
+        `))}
+  
+
+
+
+
+        OnClick(data){
+            this.listTasks = this.listTasks.filter(task=>task.id !== data.id)
+             this._setLocalStorage();
+            
+            }
+        
