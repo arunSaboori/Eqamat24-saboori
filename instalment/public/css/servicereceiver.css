@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "vazir";
+    src: url(../vazir-font-v16.1.0/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.woff);
+}
+ body{
+   min-height:120vh;
+     font-family: "vazir";
+    overflow-x: hidden;
+    background:gray;
+ }
+.btn{
+position: absolute;
+top: 2.8%;
+left: 10%;
+}
