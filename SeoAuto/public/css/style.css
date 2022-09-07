@@ -1,0 +1,12 @@
+body{
+     background: rgb(148, 148, 148);
+}
+.btn:hover{
+    box-shadow: 10px 9px;
+    border-radius: 10px;
+      transition: .6s;
+ }
+.btn:active{
+    background: #000;
+    rotate: 20deg;
+     }
