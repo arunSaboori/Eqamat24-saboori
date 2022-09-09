@@ -17,10 +17,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/',function(){
-return view('home');
-})->name('home');
-Route::get('/sp',[ServiceController::class,'pageRr'])->name('service.receiver');
-Route::get('/sp/show',[ServiceController::class,'show'])->name('show.receiver');
-Route::get('/sr',[ServiceController::class,'pagePr'])->name('service.provider');
-Route::post('/sr/insert',[ServiceController::class,'store'])->name('store.provider');
+Route::get('/',function(){return view('home');})->name('home');
+
+
+
+//return provider page
+Route::get('/provider',[ServiceController::class,'provider'])->name('service.provider');
+//
+//store provider data to database after submit redirct to home page
+Route::post('/provider',[ServiceController::class,'store'])->name('store.provider');
+//
+
+Route::get('/receiver',[ServiceController::class,'receiver'])->name('service.receiver');
+
+
+

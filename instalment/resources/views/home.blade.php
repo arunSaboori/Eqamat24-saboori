@@ -19,7 +19,7 @@
         </header>
         <img src="{{ asset('wallpaperflare.com_wallpaper.jpg') }}"  class="img1 position-absolute img-fluid  ">
         <aside class="text-center vw-100 vh-100 d-flex justify-content-center align-items-center text-light position-relative ">
-            <div class="div1"> 
+            <div class="div1">
             <h1 class="p-4"> به سایت قسط نگاه خوش امدید </h1>
             <h3>! شما میتوانید در قسط نگاه علاوه بر اشتراک گذاری خدمات و خدمات هم دریافت کنی</h3>
             <button class="btn btn-primary m-3" >اطلاعات بیشتر</button>

@@ -11,12 +11,12 @@
 </head>
 <body>
     <header class="nav bg-light">
-        <form action="{{ route('show.receiver') }}"> 
+        <form action="{{ route('service.receiver') }}" method="post" >
             @csrf
         <a href="{{ route('home') }}" class="btn btn-light">بازگشت</a>
         <p class="d-flex  vw-100  d-flex justify-content-center flex-row align-items-center"> انتخاب دسته بندی:
-            <select name="" id="" class="form-control w-25   m-3"> 
-                @foreach ($jobs as $job)    
+            <select name="" id="" class="form-control w-25   m-3">
+                @foreach ($jobs as $job)
                 <option value="{{ $job->id }}">{{ $job->job }}</option>
                 @endforeach
       </select>
