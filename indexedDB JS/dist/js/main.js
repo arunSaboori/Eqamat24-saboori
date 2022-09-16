@@ -11,36 +11,32 @@ EnterTimeArray.push(time1);
 EnterTimeArray.forEach(function(){
 
 const td1 = document.createElement('td');
- const i = document.createElement('i');
-
-i.className = ' fa-solid   fa-trash icon';
-i.style = 'color:blue;'
-
-const LocalStorageTime1 = document.createTextNode(EnterTimeArray);
+ const LocalStorageTime1 = document.createTextNode(EnterTimeArray);
 td1.appendChild(LocalStorageTime1);
-td1.appendChild(i);
 tbody.appendChild(td1);
- 
+ })
 
-})
 ExitTimeArray.push(time2);
 ExitTimeArray.forEach(function(){
 
 
-const td2 = document.createElement('td');
-const i = document.createElement('i');
+         
+        const LocalStorageTime2 = document.createTextNode(ExitTimeArray);
+        const td2 = document.createElement('td');
+        const i = document.createElement('i');
+        
+        i.className = ' fa-solid   fa-trash icon';
+        i.style = 'color:blue;'
+        td2.appendChild(LocalStorageTime2);
+        td2.appendChild(i);
+        tbody.appendChild(td2);
+             
+    
 
-i.className = ' fa-solid   fa-trash icon';
-i.style = 'color:blue;'
-
- const LocalStorageTime2 = document.createTextNode(ExitTimeArray);
- td2.appendChild(LocalStorageTime2);
-td2.appendChild(i);
-tbody.appendChild(td2);
-
+ 
 
 })
-
+ 
 
 // const td1 = document.createElement('td');
 // const td2 = document.createElement('td');
@@ -79,8 +75,7 @@ document.getElementById('BtnSubmit').addEventListener('click', function btn(x) {
 
 
 })
-
-
+ 
 
 
 let icon = document.querySelector('.icon').addEventListener('click', function () {
